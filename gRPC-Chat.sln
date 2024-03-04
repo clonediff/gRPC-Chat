@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC-Chat-Server", "gRPC-Chat-Server\gRPC-Chat-Server.csproj", "{DD8351A8-006A-48B5-B492-6BFFEEA47BF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC-Chat-Client", "gRPC-Chat-Client\gRPC-Chat-Client.csproj", "{0CA99E0C-DFB9-48A0-A05F-4EB3A86156E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{BA405713-5884-4658-BCE7-F2FDECF9389E}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD8351A8-006A-48B5-B492-6BFFEEA47BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD8351A8-006A-48B5-B492-6BFFEEA47BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD8351A8-006A-48B5-B492-6BFFEEA47BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD8351A8-006A-48B5-B492-6BFFEEA47BF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CA99E0C-DFB9-48A0-A05F-4EB3A86156E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CA99E0C-DFB9-48A0-A05F-4EB3A86156E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CA99E0C-DFB9-48A0-A05F-4EB3A86156E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CA99E0C-DFB9-48A0-A05F-4EB3A86156E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

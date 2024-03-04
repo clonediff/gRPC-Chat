@@ -1,0 +1,30 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "gRPC_Chat_Server";
+
+package auth;
+
+service Auth {
+  rpc Register (RegisterDto) returns (JwtResponse);
+  rpc Login (LoginDto) returns (JwtResponse);
+}
+
+message RegisterDto {
+  string Username = 1;
+  string Password = 2;
+  string RepeatPassword = 3;
+}
+
+message LoginDto {
+  string Username = 1;
+  string Password = 2;
+}
+
+message JwtResponse {
+  bool IsSuccess = 1;
+  oneof Result {
+    string Jwt = 2;
+    string ErrorMessage = 3;
+  }
+}
+
