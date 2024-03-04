@@ -1,0 +1,22 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "gRPC_Chat_Server";
+
+package chat;
+
+service Chat {
+  rpc Join(JoinRequest) returns (stream ChatMessage);
+  rpc SendMessage(ChatMessage) returns (SendStatus);
+}
+
+message ChatMessage {
+  string Username = 1;
+  string Message = 2;
+  bool FillUsername = 3;
+}
+
+message JoinRequest { }
+
+message SendStatus {
+  bool Success = 1;
+}
